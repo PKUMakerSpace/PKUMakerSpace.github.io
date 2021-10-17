@@ -5,6 +5,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -27,15 +29,16 @@
 									</ul>
 								</header>
                             
-                            <!-- Markdown --> 
-                                <div id="content"></div>
-                                    <script>
-                                        $.get('Readme.md', function(response, status, xhr){
-                                            $("#content").html(marked(response));
-                                        });
-                                    </script>
+						    <!-- Markdown --> 
+							<div id="content"></div>
+							    <script>
+								$.get('Readme.md', function(response, status, xhr){
+								    $("#content").html(marked(response));
+								});
+							    </script>
 
-						</div>
+							</div>
+						aaaa
 					</div>
 
 				<!-- Sidebar -->
@@ -139,8 +142,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 	</body>
 </html>
